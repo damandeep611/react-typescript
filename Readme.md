@@ -5,4 +5,4 @@
  ## Rect Foundations 
  #### Learn the Strucuture of how react applications are made 
 
- `https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs` 
+ [https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs]
