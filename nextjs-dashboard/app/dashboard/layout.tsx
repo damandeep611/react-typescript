@@ -1,5 +1,7 @@
 import React from "react";
 import SideNav from "../ui/dashboard/sidenav";
+export const experimental_ppr = true;
+//this export experimental_ppr is experimental feature of nextjs14 which we have used by also mdifying the next config file by adding the - experimental property , you can use it or remove it there isnot much difference instead of a little performance improvement that too is not sure whether it happens or not 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
