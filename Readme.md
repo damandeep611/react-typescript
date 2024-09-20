@@ -6,3 +6,8 @@
  #### Learn the Strucuture of how react applications are made 
 
  [https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs]
+
+
+ ### Live links to the some of the deployed projects 
+Clone the repos to learn as the projects are explained with comments with majority of the funtions 
+
