@@ -9,5 +9,6 @@
 
 
  ### Live links to the some of the deployed projects 
+ 1. this is the landing page using reactjs and framer motino
 Clone the repos to learn as the projects are explained with comments with majority of the funtions 
 
