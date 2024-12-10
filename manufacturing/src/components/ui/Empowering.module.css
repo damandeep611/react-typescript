@@ -1,0 +1,26 @@
+@keyframes spin1 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin2 {
+  from { transform: rotate(120deg); }
+  to { transform: rotate(480deg); }
+}
+
+@keyframes spin3 {
+  from { transform: rotate(240deg); }
+  to { transform: rotate(600deg); }
+}
+
+.orbit1 {
+  animation: spin1 25s linear infinite;
+}
+
+.orbit2 {
+  animation: spin2 30s linear infinite;
+}
+
+.orbit3 {
+  animation: spin3 35s linear infinite;
+}
