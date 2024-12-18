@@ -1,35 +1,51 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { RecoilRoot, atom, useRecoilValue, useSetRecoilState } from "recoil";
 
-export default function Pricing() {
+const count = atom({
+  key: "countState", // unique ID (with respect to other atoms/selectors)
+  default: 0, // default value (aka initial value)
+});
+
+function Parent() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <Lightbulb />
+    <div className="flex flex-col items-center justify-center h-screen">
+      <RecoilRoot>
+        <div className="flex gap-3">
+          <Incrase />
+          <Decrease />
+        </div>
+        <Value />
+      </RecoilRoot>
     </div>
   );
 }
 
-function Lightbulb() {
-  const [bulbOn, setBulbOn] = useState(true);
+function Decrease() {
+  const setCount = useSetRecoilState(count);
+  return (
+    <Button onClick={() => setCount((count) => count - 1)}>Decrease</Button>
+  );
+}
+
+function Incrase() {
+  const setCount = useSetRecoilState(count);
+  return (
+    <Button onClick={() => setCount((count) => count + 1)}>Increase</Button>
+  );
+}
+
+function Value() {
+  const countValue = useRecoilValue(count);
+  return <p>Count: {countValue}</p>;
+}
+
+// App Component
+const App = () => {
   return (
     <div>
-      <BulbState bulbOn={bulbOn} />
-      <ToggleBulbState bulbOn={bulbOn} setBulbOn={setBulbOn} />
+      <Parent />
     </div>
   );
-}
+};
 
-function BulbState({ bulbOn }) {
-  return <div>{bulbOn ? "Bulb ON" : "Bulb off"}</div>;
-}
-
-function ToggleBulbState({ bulbOn, setBulbOn }) {
-  function toggle() {
-    setBulbOn(!bulbOn);
-  }
-  return (
-    <div>
-      <Button onClick={toggle}>Toggle the bulb</Button>
-    </div>
-  );
-}
+export default App;

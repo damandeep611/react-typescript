@@ -210,7 +210,7 @@ const App = () => {
                 y: 0,
               },
             }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.7 }}
           >
             Just Keep Scrolling
           </motion.h1>
@@ -218,16 +218,18 @@ const App = () => {
             style={{ translateX: paragraphOneValue }}
             className="text-slate-100 font-thin text-4xl w-1/2 mx-auto"
           >
-            This is a basic tutorial on how to get up and running with Framer
-            Motion with some TailwindCSS. If you enjoyed this video, please
-            leave a like and also subscribe.
+            World War II stands as one of the most pivotal moments in human
+            history, intertwining strategy, technology, and human resilience.
+            The clash between the Axis and Allied powers reshaped the
+            geopolitical landscape, giving rise to a new world order
           </motion.p>
           <motion.p
             style={{ translateX: paragraphTwoValue }}
             className="text-slate-100 font-thin text-4xl w-1/2 mx-auto"
           >
-            Have fun playing with Framer Motion. It is a very powerful library,
-            when used properly. Add some life to your websites.
+            Exploring the strategies employed during battles like Stalingrad or
+            the Normandy Invasion offers a glimpse into the brilliance and flaws
+            of military minds
           </motion.p>
         </section>
       </div>
