@@ -4,15 +4,55 @@ export default function Motion() {
   return (
     <section className="bg-gray-900 text-white h-screen overflow-hidden flex items-center">
       <OrbitalSection />
+      <div className="bg-white text-black"></div>
     </section>
   );
 }
 
 const OrbitalSection = () => {
   const orbitalItems = [
-    { id: 1, label: "PLATFORMS", icon: "👥", orbitIndex: 1 },
-    { id: 2, label: "CRMs", icon: "💼", orbitIndex: 2 },
-    { id: 3, label: "COMPLIANCE", icon: "🔒", orbitIndex: 3 },
+    {
+      id: 1,
+      label: "PLATFORMS",
+      icon: "https://img.icons8.com/office/80/artificial-intelligence.png",
+      position: 90,
+      orbitIndex: 1,
+    },
+    {
+      id: 2,
+      label: "CRMs",
+      icon: "https://img.icons8.com/fluency/48/bot.png",
+      orbitIndex: 2,
+      position: 180,
+    },
+    {
+      id: 2,
+      lable: "cloud",
+      icon: "https://img.icons8.com/stickers/50/cloud-development.png",
+      orbitIndex: 2,
+      position: 0,
+    },
+    {
+      id: 3,
+      label: "COMPLIANCE",
+      icon: "https://img.icons8.com/isometric/50/bot.png",
+      orbitIndex: 3,
+      position: 180,
+    },
+    {
+      id: 4,
+      label: "React",
+      icon: "https://img.icons8.com/doodle/48/notion.png",
+      orbitIndex: 4,
+      position: 0,
+    },
+    {
+      id: 5,
+      lable: "gmail",
+      icon: "https://img.icons8.com/color/48/gmail-new.png",
+      orbitIndex: 5,
+      position: 0,
+    },
   ];
 
   return (
@@ -40,11 +80,13 @@ const OrbitalSection = () => {
         {/* Right Orbital Section */}
         <div className="col-span-7 relative h-full">
           {/* Central hub */}
-          <div className="absolute top-1/2 right-1/2 w-16 h-16 bg-white rounded-lg" />
+          <div className="absolute bottom-14 right-14 w-16 h-16 bg-white rounded-lg">
+            <img src="https://img.icons8.com/nolan/100/circuit.png" alt="" />
+          </div>
 
           {/* Orbital System */}
-          <div className="absolute top-1/2 right-1/2 transform">
-            {[1, 2, 3].map((ring) => (
+          <div className="absolute bottom-1/2 right-1/2 transform">
+            {[1, 2, 3, 4, 5].map((ring) => (
               <div
                 key={ring}
                 className="absolute top-0 right-0 origin-center animate-orbit"
@@ -67,11 +109,12 @@ const OrbitalSection = () => {
                       key={item.id}
                       className="absolute flex items-center justify-center w-12 h-12 bg-white rounded-lg"
                       style={{
-                        top: `${-ring * 100}px`,
+                        transform: `rotate(${item.position}deg)`,
+                        top: `${-ring * 10}px`,
                         right: `${(ring * 200) / 2 - 24}px`, // Centered on the ring
                       }}
                     >
-                      <span className="text-2xl">{item.icon}</span>
+                      <img src={item.icon} />
                     </div>
                   ))}
               </div>
@@ -91,7 +134,7 @@ const OrbitalSection = () => {
         }
 
         .animate-orbit {
-          animation: orbit 20s linear infinite;
+          animation: orbit 10s linear infinite;
         }
 
         .animate-orbit:nth-child(2) {
@@ -106,3 +149,4 @@ const OrbitalSection = () => {
     </div>
   );
 };
+
