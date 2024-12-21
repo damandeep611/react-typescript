@@ -5,7 +5,7 @@ const menuItems = [
   { title: "Home", href: "/" },
   { title: "Surfing", href: "/surf" },
   { title: "Grids", href: "/bentogrid" },
-  { title: "Download", href: "/" },
+  { title: "Landing", href: "/motion-components" },
 ];
 
 export default function Navigation() {
