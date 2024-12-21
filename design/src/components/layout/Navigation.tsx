@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 const menuItems = [
   { title: "Home", href: "/" },
   { title: "Surfing", href: "/surf" },
-  { title: "Support", href: "/" },
+  { title: "Grids", href: "/bentogrid" },
   { title: "Download", href: "/" },
 ];
 
