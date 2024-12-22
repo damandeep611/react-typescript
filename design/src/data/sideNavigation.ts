@@ -1,4 +1,5 @@
 import { NavSection } from "@/types/navigation";
+import { title } from "process";
 
 export const navigation: NavSection[] = [
   {
@@ -36,8 +37,8 @@ export const navigation: NavSection[] = [
     title: "Scroll",
     items: [
       {
-        title: "Mask section Transistion",
-        href: "scroll/mask-transition",
+        title: "Card section parallax effect",
+        href: "scroll/card-parallax",
       },
       {
         title: "Background Image Parallax",
@@ -54,6 +55,15 @@ export const navigation: NavSection[] = [
       {
         title: "Perscpectiev Section Transition",
         href: "scroll/perspective",
+      },
+    ],
+  },
+  {
+    title: "Grids",
+    items: [
+      {
+        title: "BentoGrid",
+        href: "/grids/bentogrid",
       },
     ],
   },

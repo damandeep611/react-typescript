@@ -7,7 +7,7 @@ import Landing from "@/pages/Home/Landing";
 const routes = [
   { path: "/", element: <App /> },
   { path: "/surf", element: <SurfingIndex /> },
-  { path: "/bentogrid", element: <BentoGrid /> },
+  { path: "/grids/bentogrid", element: <BentoGrid /> },
   { path: "/motion-components", element: <Landing /> },
 ];
 
