@@ -1,9 +1,9 @@
-import Landing from "./pages/Home/Landing";
+import Components from "./pages/Home/Components";
 
 export default function App() {
   return (
     <div>
-      <Landing />
+      <Components />
     </div>
   );
 }
