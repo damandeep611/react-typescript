@@ -38,7 +38,7 @@ export const navigation: NavSection[] = [
     items: [
       {
         title: "Card section parallax effect",
-        href: "scroll/card-parallax",
+        href: "/scroll/card-parallax",
       },
       {
         title: "Background Image Parallax",

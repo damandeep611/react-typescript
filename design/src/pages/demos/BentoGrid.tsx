@@ -82,8 +82,19 @@ export default function BentoGrid() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="col-span-full border rounded-lg"
+          className="relative overflow-hidden col-span-full border rounded-lg"
         >
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-tr from-yellow-50"
+            animate={{
+              background: [
+                "linear-gradient(to top right, rgba(255, 253, 240, 0.05), rgba(255, 248, 225, 0.05))",
+                "linear-gradient(to top right, rgba(255, 248, 225, 0.05), rgba(255, 253, 240, 0.05))",
+                "linear-gradient(to top right, rgba(255, 253, 240, 0.05), rgba(255, 248, 225, 0.05))",
+              ],
+            }}
+            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          />
           <div className="rounded-lg p-4 font-mono text-sm">
             <div className="flex items-center gap-2 mb-2">
               <div className="w-3 h-3 rounded-full bg-red-500" />
