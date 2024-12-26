@@ -1,7 +1,6 @@
-import { NavSection } from "@/types/navigation";
-import { title } from "process";
+import { NavSectionItems } from "@/types/navigation";
 
-export const navigation: NavSection[] = [
+export const navigation: NavSectionItems[] = [
   {
     title: "Getting Started",
     items: [
@@ -17,15 +16,15 @@ export const navigation: NavSection[] = [
     ],
   },
   {
-    title: "Courses",
-    items: [{ title: "Web Animation Course", href: "/courses/web-animation" }],
+    title: "Pattern Animations",
+    items: [{ title: "Orbital motion", href: "/components/surf" }],
   },
   {
-    title: "Article",
+    title: "Hero",
     items: [
       {
-        title: "Placeholder Guide using Next",
-        href: "/placeholder",
+        title: "Text Animation Hero",
+        href: "/components/heros",
       },
       {
         title: "Next Page Transition Guide",
@@ -38,11 +37,11 @@ export const navigation: NavSection[] = [
     items: [
       {
         title: "Card section parallax effect",
-        href: "/scroll/card-parallax",
+        href: "/components/card-parallax",
       },
       {
         title: "Background Image Parallax",
-        href: "scroll/parallax",
+        href: "/components/motion-components",
       },
       {
         title: "Text Parallax",
@@ -63,7 +62,7 @@ export const navigation: NavSection[] = [
     items: [
       {
         title: "BentoGrid",
-        href: "/grids/bentogrid",
+        href: "/components/bentogrid",
       },
     ],
   },

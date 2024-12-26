@@ -1,9 +1,10 @@
-import Components from "./pages/Home/Components";
+import { RouterProvider } from "react-router";
+import { router } from "./routes/Routing";
 
 export default function App() {
   return (
     <div>
-      <Components />
+      <RouterProvider router={router} />
     </div>
   );
 }

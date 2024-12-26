@@ -1,7 +1,7 @@
 import { FeatureTitle } from "./FeatureTitle";
 import { useFeatureStore } from "./Store";
 import { MusicVisual, OtherVisual } from "./visual";
-import TextAnimationSection from "@/components/TextAnimationSection";
+import TextAnimationSection from "@/components/showcase/Hero/TextAnimationSection";
 import { useHidePageOverflow } from "@/lib/toggle-page-overflow";
 import { useEscapePress } from "@/lib/use-escape-press";
 import { stagger, useAnimate } from "framer-motion";
