@@ -1,6 +1,6 @@
 import TextAnimationSection from "@/components/showcase/Hero/TextAnimationSection";
 import { ShowcaseComponent } from "../ShowcaseComponent";
-import Motion from "@/pages/designcomponents/Motion";
+import Motion from "@/pages/demos/orbitMotion/Motion";
 import { heroComponentCode } from "@/data/codeSnippets/HeroCode";
 
 export default function Heros() {

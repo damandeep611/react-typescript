@@ -3,12 +3,13 @@ import { Sidebar } from "./Sidebar";
 
 export default function Components() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="">
+    <div className="flex ">
+      <div className="fixed  ">
         <Sidebar />
       </div>
-      <main className="ml-64 px-8 py-12">
-        <div className="mx-auto max-w-6xl">
+
+      <main className=" flex md:pl-64 pt-16 pb-20 ">
+        <div className="mx-auto max-w-7xl px-4 ">
           <h1 className="text-5xl font-bold tracking-tight text-gray-900">
             Welcome to my blog{" "}
             <span className="inline-block animate-pulse text-red-500">🔴 </span>

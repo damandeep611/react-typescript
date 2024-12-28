@@ -1,10 +1,13 @@
-import { RouterProvider } from "react-router";
-import { router } from "./routes/Routing";
+import { Nav } from "./components/layout/Nav";
+import { Outlet } from "react-router";
 
 export default function App() {
   return (
-    <div>
-      <RouterProvider router={router} />
+    <div className=" bg-gray-50">
+      <Nav />
+      <main className="">
+        <Outlet />
+      </main>
     </div>
   );
 }

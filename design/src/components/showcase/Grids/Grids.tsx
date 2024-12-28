@@ -1,4 +1,4 @@
-import BentoGrid from "@/pages/demos/BentoGrid";
+import BentoGrid from "@/pages/demos/Grids/BentoGrid";
 import { ShowcaseComponent } from "../ShowcaseComponent";
 
 export default function Grids() {

@@ -1,5 +1,5 @@
-import CircularStatic from "./designcomponents/CircularStatic";
-import Motion from "./designcomponents/Motion";
+import CircularStatic from "./CircularStatic";
+import Motion from "./Motion";
 
 export default function SurfingIndex() {
   return (
