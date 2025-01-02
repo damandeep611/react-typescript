@@ -9,7 +9,7 @@ export default function Navigation() {
           Glasses.com
         </a>
       </div>
-      <nav className="flex items-center justify-between  text-lg gap-8 ">
+      <nav className="hidden  md:flex items-center justify-between  text-lg gap-8 ">
         {navigationItems.map((item) => (
           <a href={item.href}>{item.title}</a>
         ))}
