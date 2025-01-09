@@ -1,4 +1,4 @@
-import CircleWithAnimation from "./ui/Circle";
+import CircleWithAnimation from "./Circle";
 
 export default function CircleFeatures() {
   return (
