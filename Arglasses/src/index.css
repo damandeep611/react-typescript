@@ -64,3 +64,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+.circle-container {
+  transform: rotate(-90deg); /* Ensure animation starts at 12 o'clock */
+}
+
+.circle {
+  stroke: white;
+  fill: none;
+  stroke-width: 2;
+}
+
+
+
+

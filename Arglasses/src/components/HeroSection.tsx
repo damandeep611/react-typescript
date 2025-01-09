@@ -53,7 +53,7 @@ export default function HeroSection() {
 
         {/* Large Brand Text */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden">
-          <h2 className="text-[8rem] md:text-[12rem] font-bold text-[#2d3748] leading-none tracking-tighter">
+          <h2 className="text-[8rem] md:text-[12rem] font-bold text-[#2d3748] text-center leading-none tracking-tighter">
             GLASSES.COM
           </h2>
         </div>
@@ -62,41 +62,20 @@ export default function HeroSection() {
       {/* New Arrivals Banner with Parallax Effect */}
       <motion.div
         style={{ y }}
-        className="bg-[#4299e1] text-white py-16 px-6 rounded-t-[3rem] relative z-10 -mt-32"
+        className="bg-blue-500 text-white py-16 px-6 rounded-t-[3rem] relative z-10 -mt-32"
       >
-        <div className="max-w-6xl mx-auto">
+        <div className="flex items-center justify-between max-w-6xl mx-auto">
+          <div>
+            <p>Product</p>
+          </div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl font-bold mb-8 text-center"
+            className="text-5xl leading-tight  uppercase font-medium mb-8 text-center"
           >
             New Arrivals
           </motion.h2>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="text-center mb-12"
-          >
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl mb-2"
-            >
-              Discover Our Latest Collection
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-lg"
-            >
-              Trendsetting Frames for Every Style
-            </motion.p>
-          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -106,9 +85,9 @@ export default function HeroSection() {
           >
             <Button
               variant="secondary"
-              className="bg-white text-[#4299e1] hover:bg-gray-100 text-lg px-8 py-3"
+              className="bg-white text-black hover:bg-gray-100 text-lg px-8 py-3"
             >
-              SHOP ALL NEW ARRIVALS
+              SHOP NOW
             </Button>
           </motion.div>
         </div>
