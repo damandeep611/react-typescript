@@ -49,12 +49,12 @@ const CircleWithAnimation = () => {
   return (
     <div className="text-white py-12 flex items-center justify-center gap-8 flex-wrap">
       {circles.map((circle) => (
-        <div key={circle.id} className="relative">
+        <div key={circle.id} className="relative  ">
           <svg
             width="300"
             height="300"
             viewBox="0 0 300 300"
-            className="circle-container"
+            className="circle-container "
           >
             {/* Circle outline */}
             <circle
