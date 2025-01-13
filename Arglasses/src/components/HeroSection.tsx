@@ -14,10 +14,8 @@ export default function HeroSection() {
   return (
     <div className="flex flex-col min-h-screen" ref={containerRef}>
       <div className="flex flex-col h-screen relative overflow-hidden">
-        {/* Navigation */}
-
         {/* Hero Content */}
-        <div className="flex-1 flex flex-col items-center justify-center text-center px-6 py-12 z-10 relative">
+        <div className="flex-1 flex flex-col items-center py-12 text-center  relative">
           <div className="max-w-2xl mx-auto">
             <img
               src={glasses}
@@ -52,8 +50,8 @@ export default function HeroSection() {
         </div>
 
         {/* Large Brand Text */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
-          <h2 className="text-[8rem] md:text-[12rem] font-bold text-[#2d3748] text-center leading-none tracking-tighter">
+        <div className="absolute bottom-20 left-0 w-full overflow-hidden">
+          <h2 className="text-[8rem] md:text-[14rem] font-medium text-[#2d3748] text-center leading-none tracking-normal">
             GLASSES.COM
           </h2>
         </div>
@@ -61,6 +59,9 @@ export default function HeroSection() {
 
       {/* New Arrivals Banner with Parallax Effect */}
       <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: -40 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
         style={{ y }}
         className="bg-blue-500 text-white py-16 px-6 rounded-t-[3rem] relative z-10 -mt-32"
       >
