@@ -8,7 +8,7 @@ export default function BrandSection() {
       <div>
         <div>
           <h2 className="text-white text-center text-5xl  leading-tight font-light uppercase">
-            purchase with <br /> insurance made easy
+            purchase with any <br /> insurance made easy
           </h2>
         </div>
         <div className="flex flex-wrap items-center justify-center">
