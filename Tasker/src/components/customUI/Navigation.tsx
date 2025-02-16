@@ -14,7 +14,7 @@ import { Link, NavLink, useLocation } from "react-router";
 
 const navitems = [
   { name: "Dashboard", href: "/dashboard", icon: Home },
-  { name: "Tasks", href: "/", icon: CheckSquare },
+  { name: "Tasks", href: "/tasker", icon: CheckSquare },
   { name: "Calendar", href: "/", icon: Calendar },
   { name: "Setting", href: "/", icon: Settings },
 ];
