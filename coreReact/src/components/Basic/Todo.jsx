@@ -13,21 +13,31 @@ const Todo = () => {
 
   }
   return (
-    <div className="flex flex-col gap-8 items-center justify-center h-screen">
+    <div className="flex flex-col gap-8 items-center justify-center ">
       <div>
-        <input type="text" placeholder="Enter the todo" value={newTodo} onChange={(e)=> setNewTodo(e.target.value)} className="p-2 border border-black" />
-        <button className="bg-black text-white p-2 px-8" onClick={addTodo}>Add Task</button>
+        <input
+          type="text"
+          placeholder="Enter the todo"
+          value={newTodo}
+          onChange={(e) => setNewTodo(e.target.value)}
+          className="p-2 border border-black"
+        />
+        <button className="bg-black text-white p-2 px-8" onClick={addTodo}>
+          Add Task
+        </button>
       </div>
-      <div>Your added Todos
+      <div>
+        Your added Todos
         <ul>
-          {todos.map((todo, index)=> (
-            <li key={index} className="p-1 border border-black m-1">{todo}</li>
+          {todos.map((todo, index) => (
+            <li key={index} className="p-1 border border-black m-1">
+              {todo}
+            </li>
           ))}
         </ul>
       </div>
-
     </div>
-  )
+  );
 }
 
 export default Todo
